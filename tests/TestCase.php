@@ -1,9 +1,9 @@
 <?php
 
-namespace mrfansi\Xendit\Tests;
+namespace Mrfansi\Xendit\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use mrfansi\Xendit\XenditServiceProvider;
+use Mrfansi\Xendit\XenditServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'mrfansi\\Xendit\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Mrfansi\\Xendit\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
