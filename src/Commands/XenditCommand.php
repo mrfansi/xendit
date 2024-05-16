@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace mrfansi\Xendit\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class XenditCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'xendit';
 
     public $description = 'My command';
 
