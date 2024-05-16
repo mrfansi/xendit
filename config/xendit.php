@@ -1,6 +1,5 @@
 <?php
 
-// config for mrfansi/Xendit
 return [
 
     /**
@@ -11,11 +10,16 @@ return [
     /**
      * Secret keys are used to authenticate API requests coming from your servers.
      */
-    'secret_key' => env('XENDIT_SECRET_KEY', ''),
+    'secret_key' => env('XENDIT_SECRET_KEY'),
 
     /**
      * Public keys are only used to tokenize card information on the client side.
      */
-    'public_key' => env('XENDIT_PUBLIC_KEY', ''),
+    'public_key' => env('XENDIT_PUBLIC_KEY'),
+
+    /**
+     * Sent with every webhook, use the token to validate that a webhook came from our servers
+     */
+    'webhook_token' => env('XENDIT_WEBHOOK_TOKEN'),
 
 ];

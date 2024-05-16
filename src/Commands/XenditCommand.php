@@ -1,6 +1,6 @@
 <?php
 
-namespace mrfansi\Xendit\Commands;
+namespace Mrfansi\Xendit\Commands;
 
 use Illuminate\Console\Command;
 

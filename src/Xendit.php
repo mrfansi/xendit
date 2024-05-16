@@ -1,6 +1,6 @@
 <?php
 
-namespace mrfansi\Xendit;
+namespace Mrfansi\Xendit;
 
 class Xendit
 {

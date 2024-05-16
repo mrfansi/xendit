@@ -1,6 +1,6 @@
 <?php
 
-namespace mrfansi\Xendit\Database\Factories;
+namespace Mrfansi\Xendit\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
