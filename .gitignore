@@ -1,5 +1,6 @@
 .idea
 .phpunit.cache
+.env
 build
 composer.lock
 coverage
