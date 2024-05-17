@@ -4,6 +4,4 @@ namespace Mrfansi\Xendit\Traits;
 
 trait ApiConnection
 {
-
-
 }
