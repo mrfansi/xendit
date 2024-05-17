@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="mrfansi Test Suite">
+        <testsuite name="Xendit Test Suite by Muhammad Irfan">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

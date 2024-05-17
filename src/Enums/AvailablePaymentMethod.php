@@ -1,0 +1,126 @@
+<?php
+
+namespace Mrfansi\Xendit\Enums;
+
+enum AvailablePaymentMethod: string
+{
+    // global
+    case CREDIT_CARD = 'CREDIT_CARD';
+    case SHOPEEPAY = 'SHOPEEPAY';
+
+
+    // Possible values for Indonesia
+    case BCA = 'BCA';
+    case BNI = 'BNI';
+    case BSI = 'BSI';
+    case BRI = 'BRI';
+    case MANDIRI = 'MANDIRI';
+    case PERMATA = 'PERMATA';
+    case SAHABAT_SAMPOERNA = 'SAHABAT_SAMPOERNA';
+    case BNC = 'BNC';
+    case ALFAMART = 'ALFAMART';
+    case INDOMARET = 'INDOMARET';
+    case OVO = 'OVO';
+    case DANA = 'DANA';
+    case LINKAJA = 'LINKAJA';
+    case JENIUSPAY = 'JENIUSPAY';
+    case DD_BRI = 'DD_BRI';
+    case DD_BCA_KLIKPAY = 'DD_BCA_KLIKPAY';
+    case KREDIVO = 'KREDIVO';
+    case AKULAKU = 'AKULAKU';
+    case UANGME = 'UANGME';
+    case ATOME = 'ATOME';
+    case QRIS = 'QRIS';
+
+    // Possible values for Philippines
+    case SEVEN_ELEVEN = '7ELEVEN';
+    case CEBUANA = 'CEBUANA';
+    case DD_BPI = 'DD_BPI';
+    case DD_UBP = 'DD_UBP';
+    case DD_RCBC = 'DD_RCBC';
+    case DD_BDO_EPAY = 'DD_BDO_EPAY';
+    case DP_MLHUILLIER = 'DP_MLHUILLIER';
+    case DP_PALAWAN = 'DP_PALAWAN';
+    case DP_ECPAY_LOAN = 'DP_ECPAY_LOAN';
+    case PAYMAYA = 'PAYMAYA';
+    case GRABPAY_PH = 'GRABPAY';
+    case GCASH = 'GCASH';
+    case BILLEASE = 'BILLEASE';
+    case CASHALO = 'CASHALO';
+    case BDO_ONLINE_BANKING = 'BDO_ONLINE_BANKING';
+    case BPI_ONLINE_BANKING = 'BPI_ONLINE_BANKING';
+    case UNIONBANK_ONLINE_BANKING = 'UNIONBANK_ONLINE_BANKING';
+    case BOC_ONLINE_BANKING = 'BOC_ONLINE_BANKING';
+    case CHINABANK_ONLINE_BANKING = 'CHINABANK_ONLINE_BANKING';
+    case INSTAPAY_ONLINE_BANKING = 'INSTAPAY_ONLINE_BANKING';
+    case LANDBANK_ONLINE_BANKING = 'LANDBANK_ONLINE_BANKING';
+    case MAYBANK_ONLINE_BANKING = 'MAYBANK_ONLINE_BANKING';
+    case METROBANK_ONLINE_BANKING = 'METROBANK_ONLINE_BANKING';
+    case PNB_ONLINE_BANKING = 'PNB_ONLINE_BANKING';
+    case PSBANK_ONLINE_BANKING = 'PSBANK_ONLINE_BANKING';
+    case PESONET_ONLINE_BANKING = 'PESONET_ONLINE_BANKING';
+    case RCBC_ONLINE_BANKING = 'RCBC_ONLINE_BANKING';
+    case ROBINSONS_BANK_ONLINE_BANKING = 'ROBINSONS_BANK_ONLINE_BANKING';
+    case SECURITY_BANK_ONLINE_BANKING = 'SECURITY_BANK_ONLINE_BANKING';
+    case QRPH = 'QRPH';
+
+    // Possible values for Thailand
+    case PROMPTPAY = 'PROMPTPAY';
+    case LINEPAY = 'LINEPAY';
+    case WECHATPAY = 'WECHATPAY';
+    case TRUEMONEY = 'TRUEMONEY';
+    case DD_SCB_MB = 'DD_SCB_MB';
+    case DD_BBL_MB = 'DD_BBL_MB';
+    case DD_KTB_MB = 'DD_KTB_MB';
+    case DD_BAY_MB = 'DD_BAY_MB';
+    case DD_KBANK_MB = 'DD_KBANK_MB';
+
+    // Possible values for Vietnam
+    case APPOTA = 'APPOTA';
+    case ZALOPAY = 'ZALOPAY';
+    case VNPTWALLET = 'VNPTWALLET';
+    case VIETTELPAY = 'VIETTELPAY';
+
+    // Possible values for Malaysia
+    case TOUCHNGO = 'TOUCHNGO';
+    case DD_UOB_FPX = 'DD_UOB_FPX';
+    case DD_PUBLIC_FPX = 'DD_PUBLIC_FPX';
+    case DD_AFFIN_FPX = 'DD_AFFIN_FPX';
+    case DD_AGRO_FPX = 'DD_AGRO_FPX';
+    case DD_ALLIANCE_FPX = 'DD_ALLIANCE_FPX';
+    case DD_AMBANK_FPX = 'DD_AMBANK_FPX';
+    case DD_ISLAM_FPX = 'DD_ISLAM_FPX';
+    case DD_MUAMALAT_FPX = 'DD_MUAMALAT_FPX';
+    case DD_BOC_FPX = 'DD_BOC_FPX';
+    case DD_RAKYAT_FPX = 'DD_RAKYAT_FPX';
+    case DD_BSN_FPX = 'DD_BSN_FPX';
+    case DD_CIMB_FPX = 'DD_CIMB_FPX';
+    case DD_HLB_FPX = 'DD_HLB_FPX';
+    case DD_HSBC_FPX = 'DD_HSBC_FPX';
+    case DD_KFH_FPX = 'DD_KFH_FPX';
+    case DD_MAYB2U_FPX = 'DD_MAYB2U_FPX';
+    case DD_OCBC_FPX = 'DD_OCBC_FPX';
+    case DD_RHB_FPX = 'DD_RHB_FPX';
+    case DD_SCH_FPX = 'DD_SCH_FPX';
+    case AFFIN_FPX_BUSINESS = 'AFFIN_FPX_BUSINESS';
+    case AGRO_FPX_BUSINESS = 'AGRO_FPX_BUSINESS';
+    case ALLIANCE_FPX_BUSINESS = 'ALLIANCE_FPX_BUSINESS';
+    case AMBANK_FPX_BUSINESS = 'AMBANK_FPX_BUSINESS';
+    case ISLAM_FPX_BUSINESS = 'ISLAM_FPX_BUSINESS';
+    case MUAMALAT_FPX_BUSINESS = 'MUAMALAT_FPX_BUSINESS';
+    case BNP_FPX_BUSINESS = 'BNP_FPX_BUSINESS';
+    case CIMB_FPX_BUSINESS = 'CIMB_FPX_BUSINESS';
+    case CITIBANK_FPX_BUSINESS = 'CITIBANK_FPX_BUSINESS';
+    case DEUTSCHE_FPX_BUSINESS = 'DEUTSCHE_FPX_BUSINESS';
+    case HLB_FPX_BUSINESS = 'HLB_FPX_BUSINESS';
+    case HSBC_FPX_BUSINESS = 'HSBC_FPX_BUSINESS';
+    case RAKYAT_FPX_BUSINESS = 'RAKYAT_FPX_BUSINESS';
+    case KFH_FPX_BUSINESS = 'KFH_FPX_BUSINESS';
+    case MAYB2E_FPX_BUSINESS = 'MAYB2E_FPX_BUSINESS';
+    case OCBC_FPX_BUSINESS = 'OCBC_FPX_BUSINESS';
+    case PUBLIC_FPX_BUSINESS = 'PUBLIC_FPX_BUSINESS';
+    case RHB_FPX_BUSINESS = 'RHB_FPX_BUSINESS';
+    case SCH_FPX_BUSINESS = 'SCH_FPX_BUSINESS';
+    case UOB_FPX_BUSINESS = 'UOB_FPX_BUSINESS';
+
+}

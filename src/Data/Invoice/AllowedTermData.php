@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\Payment\Data;
+namespace Mrfansi\Xendit\Data\Invoice;
 
 use Illuminate\Support\Optional;
 use Spatie\LaravelData\Data;
 
-class AllowedTerm extends Data
+class AllowedTermData extends Data
 {
     public function __construct(
         public string $issuer,
