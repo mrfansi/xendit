@@ -8,7 +8,6 @@ enum AvailablePaymentMethod: string
     case CREDIT_CARD = 'CREDIT_CARD';
     case SHOPEEPAY = 'SHOPEEPAY';
 
-
     // Possible values for Indonesia
     case BCA = 'BCA';
     case BNI = 'BNI';
