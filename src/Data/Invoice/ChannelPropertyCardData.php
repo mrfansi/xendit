@@ -3,6 +3,8 @@
 namespace Mrfansi\Xendit\Data\Invoice;
 
 use Illuminate\Support\Optional;
+use Mrfansi\Xendit\Enums\AvailableNotificationChannel;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Normalizers\ArrayableNormalizer;
 use Spatie\LaravelData\Normalizers\ArrayNormalizer;
@@ -14,7 +16,7 @@ class ChannelPropertyCardData extends Data
 {
     public function __construct(
         public array|Optional $allowed_bins,
-        /** @var InstallmentConfigurationData[] */
+        #[DataCollectionOf(AvailableNotificationChannel::class)]
         public array|Optional $installment_configuration,
     ) {
     }

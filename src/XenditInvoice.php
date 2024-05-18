@@ -2,10 +2,9 @@
 
 namespace Mrfansi\Xendit;
 
-use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\ConnectionException;
-use Illuminate\Http\Client\Response;
 use Mrfansi\Xendit\Data\Invoice\CreateInvoiceData;
+use Mrfansi\Xendit\Responses\InvoiceResponse;
 
 class XenditInvoice extends Xendit
 {
@@ -45,12 +44,12 @@ class XenditInvoice extends Xendit
     /**
      * @throws ConnectionException
      */
-    public function create(array $invoiceData, ?string $for_user_id = null, ?string $with_split_rule = null): PromiseInterface|Response
+    public function create(array $invoiceData, ?string $for_user_id = null, ?string $with_split_rule = null): InvoiceResponse
     {
         $this->setForUserID($for_user_id);
         $this->setWithSplitRule($with_split_rule);
 
-        return $this->request('POST', $this->endpoint, CreateInvoiceData::from($invoiceData)->toArray());
+        return new InvoiceResponse($this->request('POST', $this->endpoint, CreateInvoiceData::from($invoiceData)->toArray()));
 
     }
 }

@@ -2,6 +2,8 @@
 
 namespace Mrfansi\Xendit\Data\Invoice;
 
+use Mrfansi\Xendit\Enums\AvailableCurrency;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\Validation\Max;
 use Spatie\LaravelData\Attributes\Validation\Min;
 use Spatie\LaravelData\Data;
@@ -27,17 +29,17 @@ class CreateInvoiceData extends Data
         #[Max(255), Min(1)]
         public string|Optional $failure_redirect_url,
         public array|Optional $payment_methods,
-        public string|Optional $currency,
+        public AvailableCurrency|Optional $currency,
         public string|Optional $callback_virtual_account_id,
         public string|Optional $mid_label,
         public string|Optional $reminder_time_unit,
         #[Min(1)]
         public float|Optional $reminder_time,
         public string|Optional $locale,
-        /** @var ItemData[] */
-        public array $items,
-        /** @var FeeData[] */
-        public array $fees,
+        #[DataCollectionOf(ItemData::class)]
+        public array|Optional $items,
+        #[DataCollectionOf(FeeData::class)]
+        public array|Optional $fees,
         public bool|Optional $should_authenticate_credit_card,
         public ChannelPropertyData|Optional $channel_properties
     ) {
