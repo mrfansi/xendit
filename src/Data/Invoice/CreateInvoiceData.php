@@ -32,7 +32,7 @@ class CreateInvoiceData extends Data
         public string|Optional $mid_label,
         public string|Optional $reminder_time_unit,
         #[Min(1)]
-        public int|Optional $reminder_time,
+        public float|Optional $reminder_time,
         public string|Optional $locale,
         /** @var ItemData[] */
         public array $items,

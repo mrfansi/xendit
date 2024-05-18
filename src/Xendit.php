@@ -19,6 +19,10 @@ class Xendit
 
     protected array $headers = ['Content-Type', 'application/json'];
 
+    protected ?string $forUserID = null;
+
+    protected ?string $withSplitRule = null;
+
     public function __construct()
     {
         $this->secretKey = config('xendit.secret_key');
